@@ -32,6 +32,8 @@ div.slides input {
     height: 380px;
     top: 0;
     opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
     transition: all .7s ease-in-out;
 }
 
@@ -57,16 +59,22 @@ img.img_slider {
     position: absolute;
     padding: 0 20px;
     opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
     transition: opacity .2s;
     cursor: pointer;
 }
 
 .slide-image:hover + .carousel-controls label{
     opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
 }
 
 .carousel-controls label:hover {
     opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
 }
 
 .carousel-controls .prev-slide {
@@ -83,6 +91,10 @@ img.img_slider {
 
 .carousel-dots {
     position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row-reverse;
     z-index: 999;
@@ -111,7 +123,11 @@ img.img_slider {
 
 input:checked + .slide-container .slide-image {
     opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
     transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
     transition: opacity 1s ease-in-out;
 }
 
@@ -141,12 +157,17 @@ input:checked + .slide-container .nav label { display: block; }
 
 .label_wrapper {
     text-align: center;
+    margin-left: 18%;
 }
 
 /******* For Tablet *********************/
 @media only screen and (max-width: 600px) and (min-width: 321px) {
     .slide-image {
-        height: 150px;
+        height: 280px;
+    }
+
+    .slider_link {
+        margin-bottom: 16px;
     }
 
     .carousel-controls {
@@ -155,13 +176,17 @@ input:checked + .slide-container .nav label { display: block; }
 
     .carousel-dots {
         display: block;
-        margin-top: 150px;
+        margin-top: 280px;
     }
 
     .carousel-dots .carousel-dot {
         margin-top: 16px;
         margin-bottom: 16px;
         text-align: center;
+    }
+
+    .label_wrapper {
+        margin-left: 0;
     }
 }
 
@@ -177,11 +202,19 @@ input:checked + .slide-container .nav label { display: block; }
         height: 150px;
     }
 
+    .slider_link {
+        margin-bottom: 16px;
+    }
+
     .carousel-controls {
         line-height: 150px;
     }
 
     .carousel-dots {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
         display: flex;
         flex-direction: column;
         margin-top: 150px;
@@ -193,6 +226,7 @@ input:checked + .slide-container .nav label { display: block; }
     }
 
     .label_wrapper {
+        margin-left: 0;
         height: 40px;
     }
 }
