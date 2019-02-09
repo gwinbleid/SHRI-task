@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #wrapper {
     margin: 0 auto;
     max-width: 1000px;
@@ -38,24 +42,52 @@ main {
     color: #FFFFFF
 }
 
-h1, h2 {
+section.project_container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+h1, h2, h3 {
     text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 800;
 }
 
 h1 {
-    font-family: 'Montserrat';
-    font-weight: 800;
     font-size: 42px;
     margin-bottom: 8px;
     margin-top: 36px;
 }
 
 h2 {
-    font-family: 'Montserrat';
-    font-weight: 800;
+
     font-size: 32px;
     margin-top: 0;
     margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+a.slider_link {
+    font-family: 'PT Mono';
+    text-decoration: none;
+    font-size: 14px;
+    color: #71ABFF;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+a.slider_link:hover {
+    color: #ffffff;
+}
+
+a.slider_link:active {
+    opacity: 0.7;
 }
 
 img#hero_image {
@@ -70,6 +102,11 @@ p {
     text-align: center;
     line-height: 20px;
     margin-top: 0;
+}
+
+p.portfolio_description {
+    margin: 0;
+    opacity: 0.7;
 }
 
 p.description {
