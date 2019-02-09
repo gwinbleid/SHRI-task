@@ -1,7 +1,6 @@
 div.slides {
     display: block;
     position: relative;
-    height: 600px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -140,6 +139,10 @@ input:checked + .slide-container .nav label { display: block; }
     margin: 0;
 }
 
+.label_wrapper {
+    text-align: center;
+}
+
 /******* For Tablet *********************/
 @media only screen and (max-width: 600px) and (min-width: 321px) {
     .slide-image {
@@ -160,12 +163,6 @@ input:checked + .slide-container .nav label { display: block; }
         margin-bottom: 16px;
         text-align: center;
     }
-    .carousel-dot:first-of-type {
-        margin-left: 40%;
-    }
-    .carousel-dot:last-of-type {
-        margin-right: 40%;
-    }
 }
 
 
@@ -185,20 +182,18 @@ input:checked + .slide-container .nav label { display: block; }
     }
 
     .carousel-dots {
-        display: block;
+        display: flex;
+        flex-direction: column;
         margin-top: 150px;
     }
 
     .carousel-dots .carousel-dot {
         margin-top: 16px;
         margin-bottom: 16px;
-        text-align: center;
     }
-    .carousel-dot:first-of-type {
-        margin-left: 40%;
-    }
-    .carousel-dot:last-of-type {
-        margin-right: 40%;
+
+    .label_wrapper {
+        height: 40px;
     }
 }
 

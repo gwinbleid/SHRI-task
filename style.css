@@ -30,13 +30,6 @@ header {
     padding-bottom: 125px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #portfolio {
     background: #25282A;
     color: #FFFFFF
@@ -170,6 +163,10 @@ button:active {
     opacity: 0.7;
 }
 
+button.header_button {
+    width: 280px;
+}
+
 section {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -301,6 +298,14 @@ li:nth-child(2n+2) {
         padding-bottom: 52px;
     }
 
+    h1 {
+        margin-top: 31px;
+    }
+
+    p {
+        opacity: 0.7;
+    }
+
     .form_text_inputs {
         display: flex;
         flex-direction: column;
@@ -328,10 +333,11 @@ li:nth-child(2n+2) {
         padding-bottom: 165px;
     }
 
-    button.header_button {
+    .header_item {
         width: 100%;
         max-width: 280px;
     }
+
 
     img#hero_image {
         height: 250px;
@@ -358,6 +364,8 @@ li:nth-child(2n+2) {
         padding-right: 20px;
     }
 
+    /******     HEADER **********/
+
     header {
         padding-top: 88px;
         padding-bottom: 88px;
@@ -365,12 +373,19 @@ li:nth-child(2n+2) {
 
     h1 {
         font-size: 32px;
+        line-height: 36px;
+
     }
 
     p {
-        
         margin-top: 0;
         margin-bottom: 20px;
+        opacity: 0.7;
+    }
+
+    section.project_container {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 
     img#hero_image {
