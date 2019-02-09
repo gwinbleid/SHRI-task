@@ -7,18 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="accordion.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="slider.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800|PT+Mono|PT+Sans" rel="stylesheet">
 </head>
 <body>
-    <header class="main_containers">
-        <img src="https://leonardo.osnova.io/a52f9fb4-c017-dc22-c280-22beed1c756a/-/scale_crop/824x600/center/-/format/webp/" alt="Здеся должно быть мое лицо">
-        <h1>Alexander Shavel</h1>
-        <p>Junior Front-End developer based in Zalataya Horka, Minsk</p>
-        <button class="header_button">Связаться</button>
-    </header>
+    <div id="wrapper">
+        <header class="main_containers">
+            <img id="hero_image" src="https://leonardo.osnova.io/a52f9fb4-c017-dc22-c280-22beed1c756a/-/scale_crop/824x600/center/-/format/webp/" alt="Здеся должно быть мое лицо">
+            <h1>Alexander Shavel</h1>
+            <p>Junior Front-End developer based in Zalataya Horka, Minsk</p>
+            <button class="header_button">Связаться</button>
+        </header>
 
-    <section class="main_containers" id="expectation">
-            <h2 class="wrapper_elem">Ожидания от ШРИ</h3>
+        <section class="main_containers" id="expectation">
+            <h2 class="wrapper_elem">Ожидания от ШРИ</h2>
             <div class="wrapper_elem accordion">
                 <div class="tab">
                     <input id="tab-one" type="checkbox" name="tabs" checked>
@@ -42,78 +44,111 @@
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
 
 
-    <section class="main_containers" id="portfolio">
-            <h2 class="wrapper_elem">Мои работы</h3>
+        <section class="main_containers" id="portfolio">
+            <h2 class="wrapper_elem">Мои работы</h2>
             <p class="wrapper_elem">
                 Собраны избранные реально работающие проекты
             </p>
 
             <section class="wrapper_elem">
                 <h5>My Future Amazing App</h5>
-                <div class="slider-container">
-                
-                    <input id="slide-dot-1" type="radio" class="hui" name="slides" checked>
-                      <div class="slide slide-1"></div>
-                    
-                    <input id="slide-dot-2" type="radio" class="hui" name="slides">
-                      <div class="slide slide-2"></div>
-                    
-                    <input id="slide-dot-3" type="radio" class="hui" name="slides">
-                      <div class="slide slide-3"></div>
-    
-                      <div class="menu">
-                            <label for="slide-dot-1" class="label-for-check"></label>
-                                    <label for="slide-dot-2" class="label-for-check"></label>
-                                    <label for="slide-dot-3" class="label-for-check"></label>
-                        
+
+                <div class="carousel">
+                    <div class="slides">
+                        <input type="radio" name="radio-buttons" id="img-1" checked />
+                        <div class="slide-container">
+                            <div class="slide-image">
+                                <img class="img_slider" src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-3" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-2" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="radio" name="radio-buttons" id="img-2" />
+                        <div class="slide-container">
+                            <div class="slide-image">
+                                <img class="img_slider" src="http://www.timisoaranight.gruzphoto.eu/IMG_8554.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-1" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-3" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </div>
+                        <input type="radio" name="radio-buttons" id="img-3" />
+                        <div class="slide-container">
+                            <div class="slide-image">
+                                <img class="img_slider" src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg">
+                            </div>
+                            <div class="carousel-controls">
+                                <label for="img-2" class="prev-slide">
+                                    <span>&lsaquo;</span>
+                                </label>
+                                <label for="img-1" class="next-slide">
+                                    <span>&rsaquo;</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="carousel-dots">
+
+                            <p class="slider_description">
+                                dsfdsfdsfdsfdsfdsdsfds
+                            </p>
+                            <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                            <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                            <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        </div>
                     </div>
                 </div>
-                <p class="description">
-                    Межзвездная матеpия на следующий год, когда было лунное затмение и сгорел древний храм Афины в Афинах (при эфоре Питии и афинском архонте Каллии), многопланово перечеркивает ионный хвост.
-                </p>
-                
+
             </section>
 
-            <ul class="slider_action_list">
-                    <li class="slider_li"></li>
-                    <li class="slider_li"></li>
-                    <li class="slider_li"></li>
+
+
+
+        </section>
+        <footer class="main_containers">
+            <h2 class="wrapper_elem">Контактная информация</h2>
+            <p class="wrapper_elem">Я открыт для новых проектов. Вы можете прислать мне для оценки примерное техническое задание или просто описание проекта своими словами.</p>
+            <div class="wrapper_elem social_links">
+                <ul>
+                    <li class="facebook_link">
+                        <a href="#" class=""><img src="./images/facebook.svg" class="link_image"></a>
+                    </li>
+                    <li class="twitter_link">
+                        <a href="#" class=""><img src="./images/twitter.svg" class="link_image"></a>
+                    </li>
+                    <li class="telegram_link">
+                        <a href="#" class=""><img src="./images/telegram.svg" class="link_image"></a>
+                    </li>
                 </ul>
-
-            
-    </section>
-    <footer class="main_containers">
-        <h2 class="wrapper_elem">Контактная информация</h3>
-        <p class="wrapper_elem">Я открыт для новых проектов. Вы можете прислать мне для оценки примерное техническое задание или просто описание проекта своими словами.</p>
-        <div class="wrapper_elem social_links">
-            <ul>
-                <li class="facebook_link">
-                    <a href="#" class=""><img src="./images/facebook.svg" class="link_image"></a>
-                </li>
-                <li class="twitter_link">
-                    <a href="#" class=""><img src="./images/twitter.svg" class="link_image"></a>
-                </li>
-                <li class="telegram_link">
-                    <a href="#" class=""><img src="./images/telegram.svg" class="link_image"></a>
-                </li>
-            </ul>
-        </div>
-        <form class="wrapper_elem">
-            <div class="form_text_inputs">
-                <input type="text" placeholder="Как вас зовут?" class="forn_inputs" pattern="[A-Za-z]" required>
-                <input type="email" placeholder="Почтовый ящик" class="forn_inputs" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
             </div>
-            <textarea placeholder="Сообщение" minlength="10" maxlength="200" required></textarea>
+            <form class="wrapper_elem">
+                <div class="form_text_inputs">
+                    <input type="text" placeholder="Как вас зовут?" class="forn_inputs" pattern="[A-Za-z]" required>
+                    <input type="email" placeholder="Почтовый ящик" class="forn_inputs" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
+                </div>
+                <textarea placeholder="Сообщение" minlength="10" maxlength="200" required></textarea>
 
-            <input type="file" class="wrapper_elem upload_btn"/>
-            <div class="wrapper_elem overlay-layer">Прикрепить ТЗ</div>
+                <input type="file" class="wrapper_elem upload_btn"/>
+                <div class="wrapper_elem overlay-layer">Прикрепить ТЗ</div>
 
-            <button type="submit">Отправить</button>
-        </form>
-    </footer>
+                <button type="submit">Отправить</button>
+            </form>
+        </footer>
+    </div>
 </body>
 </html>
 

@@ -1,5 +1,6 @@
-body {
+#wrapper {
     margin: 0 auto;
+    max-width: 1000px;
 }
 
 .main_containers {
@@ -57,7 +58,7 @@ h2 {
     margin-bottom: 16px;
 }
 
-img {
+img#hero_image {
     height: 340px;
     width: 340px;
     border-radius: 50%;
@@ -295,7 +296,7 @@ li:nth-child(2n+2) {
         max-width: 280px;
     }
 
-    img {
+    img#hero_image {
         height: 250px;
         width: 250px;
         border-radius: 50%;
@@ -335,7 +336,7 @@ li:nth-child(2n+2) {
         margin-bottom: 20px;
     }
 
-    img {
+    img#hero_image {
         height: 205px;
         width: 205px;
     }
