@@ -1,0 +1,221 @@
+/* Acordeon styles */
+.tab {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1px;
+    color: #000000;
+    overflow: hidden;
+
+    border-top: 1px solid #D2D9E2;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.tab label {
+    position: relative;
+    display: block;
+    background: #fff;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    line-height: 3;
+    font-size: 18px;
+    color: #0059D9;
+    cursor: pointer;
+}
+
+
+.blue label {
+    background: #2980b9;
+}
+
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+.tab-content  p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.blue .tab-content {
+    background: #3498db;
+}
+
+/* :checked */
+.tab input:checked ~ .tab-content {
+    max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+
+.tab input[type=checkbox] + label::after {
+    content: "+";
+}
+.tab input[type=radio] + label::after {
+    content: "\25BC";
+}
+
+.tab input[type=checkbox]:checked + label::after {
+    transform: rotate(-225deg);
+}
+
+.tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+}
+
+
+
+
+/****** File Input *******************/
+
+
+.overlay-layer{
+    height:36px;
+    position: relative;
+    z-index:0;
+    margin-top: -56px;
+    margin-bottom: 20px;
+    font-size:16px;
+    color:#0059D9;
+    text-align:center;
+    line-height:40px;
+    box-sizing: border-box;
+
+    background: rgba(255,255,255,0.00);
+    border: 1px solid rgba(31,64,111,0.20);
+    border-radius: 4px;
+}
+.upload_btn{
+    position: relative;
+    margin-top: -36px;
+    height:36px;
+    z-index:10;
+    opacity:0;
+    box-sizing: border-box;
+}
+
+/*************************************/
+
+
+/** Слайдер **************************/
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slider-container{
+  height: 380px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu {
+  position: relative;
+  z-index: 900;
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu label {
+  cursor: pointer;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #71ABFF;
+  border-radius: 50%;
+  margin: 0 .2em 1em;
+}
+
+.menu label:hover {
+  background: #fff;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s .75s;
+}
+
+[id^="slide"]:checked + .slide {
+  left: 0;
+  z-index: 100;
+  transition: left .65s ease-out;
+}
+
+input[type=radio]:checked + label {
+    background: #25282A;;
+    border: 1px solid #71ABFF;
+}
+
+.slider_action_list {
+    display: inline-flex;
+    margin: 0;
+}
+
+.slider_li {
+    width: 8px;
+    height: 8px;
+    text-align: center;
+}
+
+.slide-1 {
+  background-image: url("https://source.unsplash.com/t7YycgAoVSw/1600x900");
+}
+.slide-2 {
+  background-image: url("https://source.unsplash.com/11H1SSVcIxc/1600x900");
+}
+.slide-3 {
+  background-image: url("https://source.unsplash.com/OlZ1nWLEEgM/1600x900");
+}
+
+
+
+
+
+
+
