@@ -1,0 +1,114 @@
+/* Acordeon styles */
+.tab {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1px;
+    color: #000000;
+    overflow: hidden;
+    border-top: 1px solid #D2D9E2;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+.tab label {
+    position: relative;
+    display: block;
+    background: #fff;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    line-height: 52px;
+    font-size: 18px;
+    color: #0059D9;
+    cursor: pointer;
+}
+
+.tab label:hover {
+    color: #000000;
+}
+
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+}
+
+.tab-content  p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* :checked */
+.tab input:checked ~ .tab-content {
+    max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+    position: absolute;
+    display: block;
+    right: -20px;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+    font-family: auto;
+    font-size: 20px;
+}
+
+.tab input[type=checkbox]:hover + label::after {
+    content: "+";
+}
+
+.tab input[type=checkbox]:checked + label::after {
+    -webkit-transform: rotate(-495deg);
+    -moz-transform: rotate(-495deg);
+    -o-transform: rotate(-495deg);
+    -ms-transform: rotate(-495deg);
+    transform: rotate(-495deg);
+}
+
+/****** File Input *******************/
+
+
+.overlay-layer{
+    height:36px;
+    position: relative;
+    z-index:0;
+    margin-top: -56px;
+    margin-bottom: 20px;
+    font-family: 'PT Sans';
+    font-size:16px;
+    color:#0059D9;
+    text-align:center;
+    line-height:32px;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.00);
+    border: 1px solid rgba(31,64,111,0.20);
+    border-radius: 4px;
+}
+
+.upload_btn {
+    position: relative;
+    margin-top: -36px;
+    height:36px;
+    z-index:10;
+    opacity:0;
+    box-sizing: border-box;
+}
+
+.upload_btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}

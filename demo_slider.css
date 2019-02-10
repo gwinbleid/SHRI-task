@@ -1,0 +1,238 @@
+div.slides {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+div.slides input {
+    display: none;
+}
+
+
+.slide-container {
+    display: block;
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    top: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    transition: all .7s ease-in-out;
+}
+
+img.img_slider {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 380px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 25%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 25%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 999;
+    margin-top: 400px;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #71ABFF;
+    box-sizing: border-box;
+    margin-top: 7px;
+}
+
+.carousel-dot:nth-child(2n + 2) {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.carousel-dot:hover {
+    background: white;
+    cursor: pointer;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+    display: block;
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6,
+input#img-7:checked ~ .carousel-dots label#img-dot-7,
+input#img-8:checked ~ .carousel-dots label#img-dot-8,
+input#img-9:checked ~ .carousel-dots label#img-dot-9,
+input#img-10:checked ~ .carousel-dots label#img-dot-10,
+input#img-11:checked ~ .carousel-dots label#img-dot-11,
+input#img-12:checked ~ .carousel-dots label#img-dot-12 {
+    border: 1px solid #71ABFF;
+    background: black;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+.slider_description {
+    flex: 1;
+    font-family: 'PT Sans';
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.label_wrapper {
+    text-align: center;
+    margin-left: 18%;
+}
+
+/******* For Tablet *********************/
+@media only screen and (max-width: 600px) and (min-width: 321px) {
+    .slide-image {
+        height: 280px;
+    }
+
+    .slider_link {
+        margin-bottom: 16px;
+    }
+
+    .carousel-controls {
+        line-height: 150px;
+    }
+
+    .carousel-dots {
+        display: block;
+        margin-top: 280px;
+    }
+
+    .carousel-dots .carousel-dot {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .label_wrapper {
+        margin-left: 0;
+    }
+}
+/*****************************************/
+
+
+
+/*******   FOR MOBILE ********************/
+@media screen and (max-width: 320px) {
+    .slide-image {
+        height: 150px;
+    }
+
+    .slider_link {
+        margin-bottom: 16px;
+    }
+
+    .carousel-controls {
+        line-height: 150px;
+    }
+
+    .carousel-dots {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .carousel-dots .carousel-dot {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .label_wrapper {
+        margin-left: 0;
+        height: 40px;
+    }
+}
+/*****************************************/

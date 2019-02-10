@@ -1,0 +1,437 @@
+body {
+    margin: 0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.main_containers {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.wrapper_elem {
+    max-width: 700px;
+    width: 100%;
+}
+
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    background: #EFF1F2;
+}
+
+#portfolio {
+    background: #25282A;
+    color: #FFFFFF
+}
+
+section.project_container {
+    padding-top: 80px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    margin-top: 36px;
+}
+
+h2 {
+
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+
+a.slider_link {
+    font-family: 'PT Mono';
+    text-decoration: none;
+    font-size: 14px;
+    color: #71ABFF;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+a.slider_link:hover {
+    color: #ffffff;
+}
+
+a.slider_link:active {
+    opacity: 0.7;
+}
+
+img#hero_image {
+    height: 340px;
+    width: 340px;
+    border-radius: 50%;
+}
+
+p {
+    font-family: 'PT Mono';
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 0;
+}
+
+p.portfolio_description {
+    margin: 0;
+    opacity: 0.7;
+}
+
+p.description {
+    font-family: 'PT Sans';
+}
+
+input {
+    background: #FFFFFF;
+    border: 1px solid rgba(31,64,111,0.20);
+    border-radius: 4px;
+    height: 36px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.forn_inputs, textarea {
+    padding: 6px 12px;
+    font-family: 'PT Sans';
+    font-size: 16px;
+    color: #000000;
+    line-height: 20px;
+    outline: none;
+}
+
+.forn_inputs:focus, textarea:focus {
+    border: 1px solid #0059D9;
+}
+
+.forn_inputs:last-of-type {
+    margin-left: 20px;
+}
+
+button {
+    background-color: #0059D9;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    height: 52px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+}
+
+button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+button.header_button {
+    width: 280px;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+section.project_container {
+    padding-bottom: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+    background: #EFF1F2;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form_text_inputs {
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid rgba(31,64,111,0.20);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    height: 136px;
+    box-sizing: border-box;
+}
+
+.forn_inputs::placeholder, textarea::placeholder {
+    opacity: 0.3;
+}
+
+
+
+
+
+/* Social Linnk */
+
+.social_links {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+ul {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;;
+}
+
+a {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a.social_anchor {
+    height: 100%;
+    width: 100%;
+}
+
+li:nth-child(2n+2) {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.link_image {
+    height: 30px;
+    width: 22px;
+}
+
+.facebook_link {
+    background: #395A99;
+}
+
+.facebook_link:hover {
+    background: #395A99;
+    opacity: 0.7;
+}
+
+.facebook_link:active {
+    opacity: 0.2;
+}
+
+.twitter_link {
+    background: #51ADEF;
+}
+
+.twitter_link:hover {
+    background: #51ADEF;
+    opacity: 0.7;
+}
+
+.twitter_link:active {
+    opacity: 0.2;
+}
+
+.telegram_link {
+    background: #2CA5E0;
+}
+
+.telegram_link:hover {
+    background: #2CA5E0;
+    opacity: 0.7;
+}
+
+.telegram_link:active {
+    opacity: 0.2;
+}
+/**********************************/
+
+@media only screen and (max-width: 600px) {
+    section, footer {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    h1 {
+        margin-top: 31px;
+    }
+
+    p {
+        opacity: 0.7;
+    }
+
+    .form_text_inputs {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forn_inputs:last-of-type {
+        margin-left: 0;
+    }
+
+    input {
+        margin-bottom: 16px;
+    }
+}
+
+
+
+
+
+/******* For Tablet *********************/
+@media only screen and (max-width: 600px) and (min-width: 321px) {
+
+    .main_containers {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    header {
+        padding-top: 165px;
+        padding-bottom: 165px;
+    }
+
+    .header_item {
+        width: 100%;
+        max-width: 280px;
+    }
+
+
+    img#hero_image {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+    }
+
+    .slider-container {
+        height: 280px;
+    }
+    p {
+        opacity: 1;
+    }
+
+}
+
+
+
+/*****************************************/
+
+
+
+/*******   FOR MOBILE ********************/
+@media screen and (max-width: 320px) {
+
+    .main_containers {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /******     HEADER **********/
+
+    header {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+
+    h1, h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    #expectation > h2 {
+        text-align: left;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        opacity: 0.7;
+    }
+
+    section, footer {
+        padding-top: 52px;
+        padding-bottom: 52px;
+    }
+
+    section.project_container {
+        padding-top: 60px;
+    }
+
+
+    img#hero_image {
+        height: 205px;
+        width: 205px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .slider-container {
+        height: 150px;
+    }
+}
+
+
+
+/*****************************************/
