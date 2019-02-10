@@ -137,10 +137,18 @@ input:checked + .slide-container .carousel-controls label {
 
 input#img-1:checked ~ .carousel-dots label#img-dot-1,
 input#img-2:checked ~ .carousel-dots label#img-dot-2,
-input#img-3:checked ~ .carousel-dots label#img-dot-3 {
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6,
+input#img-7:checked ~ .carousel-dots label#img-dot-7,
+input#img-8:checked ~ .carousel-dots label#img-dot-8,
+input#img-9:checked ~ .carousel-dots label#img-dot-9,
+input#img-10:checked ~ .carousel-dots label#img-dot-10,
+input#img-11:checked ~ .carousel-dots label#img-dot-11,
+input#img-12:checked ~ .carousel-dots label#img-dot-12 {
     border: 1px solid #71ABFF;
     background: black;
-
 }
 
 
@@ -189,9 +197,6 @@ input:checked + .slide-container .nav label { display: block; }
         margin-left: 0;
     }
 }
-
-
-
 /*****************************************/
 
 
@@ -230,7 +235,4 @@ input:checked + .slide-container .nav label { display: block; }
         height: 40px;
     }
 }
-
-
-
 /*****************************************/
